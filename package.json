@@ -9,7 +9,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && chmod 755 build/index.js",
-    "tokenGenerator": "tsx src/scripts/tokenGenerator.ts"
+    "tokenGenerator": "tsx src/scripts/tokenGenerator.ts",
+    "sync": "node sync-seo-pdfs.js",
+    "sync:force": "node sync-seo-pdfs.js --force",
+    "sync:archive": "node sync-seo-pdfs.js --archive",
+    "sync:validate": "node sync-seo-pdfs.js --validate"
   },
   "keywords": [],
   "author": "",
